@@ -13,8 +13,8 @@ module.exports = function(config) {
     files: [
         'bower_components/angular/angular.js',
         'bower_components/angular-mocks/angular-mocks.js',
-        'ng-symbiosis-routeprovider.src.js',
-        'ng-symbiosis-routeprovider.test.js'
+        'cmelion-routeprovider.src.js',
+        'cmelion-routeprovider.test.js'
     ],
 
     // list of files / patterns to exclude

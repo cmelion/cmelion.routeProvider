@@ -1,4 +1,4 @@
-describe('ng-symbiosis-routeprovider', function () {
+describe('cmelion-routeprovider', function () {
 
     'use strict';
 
@@ -8,7 +8,7 @@ describe('ng-symbiosis-routeprovider', function () {
 
         beforeEach(function () {
 
-            module('ngSymbiosis.routeProvider', function (_stateFactory_) {
+            module('cmelion.routeProvider', function (_stateFactory_) {
                 stateFactory = _stateFactory_;
             });
 

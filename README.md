@@ -1,4 +1,4 @@
-symbiosis.routeProvider
+cmelion.routeProvider
 ======================
 
-`bower install ng-symbiosis-routeprovider`
+`bower install cmelion-routeprovider`
