@@ -6,10 +6,6 @@
     "main": [
         "cmelion-routeprovider.min.js"
     ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/cmelion/cmelion.routeProvider.git"
-    },
     "ignore": [
         "**/.*",
         "node_modules",
