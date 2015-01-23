@@ -4,12 +4,13 @@
   angular.module('cmelion.routeProvider', [])
         .constant('stateFactory', stateFactory);
 
+        stateFactory.$inject = ['classedName', 'params'];
         function stateFactory(classedName, params) {
 
             var _INITSERVICE = classedName + 'CtrlInit';
 
-            function dasherize(input) {
-                return input
+        function dasherize(classedName) {
+            return classedName
                     .replace(/(?:^[A-Z]{2,})/g, function (match) { //XMLfileIsCool -> xml-fileIsCool
                         return match.toLowerCase() + "-";
                     })
@@ -19,12 +20,14 @@
                     .replace(/^-/, ''); // CamelCase -> -snake-case -> snake-case
             }
 
-            var _defaults = {
-                url: '/' + dasherize(classedName),
-                templateUrl: 'states/' + dasherize(classedName) + '/index/main-view.html',
-                controller: classedName + 'Ctrl',
-                controllerAs: 'vm'
-            };
+
+        var dasherizedName = dasherize(classedName);
+
+        var _defaults = {
+            url: '/' + dasherizedName,
+            controller: classedName + 'Ctrl',
+            controllerAs: 'vm'
+        };
 
             try {
                 _defaults.resolve = {
